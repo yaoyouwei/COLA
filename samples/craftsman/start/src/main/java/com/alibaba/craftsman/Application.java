@@ -21,6 +21,11 @@ public class Application {
     public static void main(String[] args) {
         log.info("Begin to start Spring Boot Application");
         long startTime = System.currentTimeMillis();
+        log.info("===========================================");
+        log.info("  Craftsman Application is starting up...  ");
+        log.info("  Project Name: start                      ");
+        log.info("  Author: Frank Zhang                      ");
+        log.info("===========================================");
 
         SpringApplication.run(Application.class, args);
 

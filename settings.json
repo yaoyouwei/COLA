@@ -1,0 +1,39 @@
+{
+    // 指定 Language Server 使用的 JDK 路径
+    "java.jdt.ls.java.home": "C://Program Files//Java//jdk1.8.0_181",
+    // 编译版本（匹配项目的 source/target）
+    "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-1.8",
+        "path": "C://Program Files//Java//jdk1.8.0_181",
+        "default": true
+      }
+    ],
+    "terminal.integrated.profiles.windows": {
+        "Command": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": ["/K", "chcp 65001 >nul"]
+        },
+        "PowerShell": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "& { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 }"
+            ]
+        },
+        "Git Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": ["--login", "-i"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    // 编码（避免中文乱码）
+    "files.encoding": "utf8",
+    "java.file.encoding": "UTF-8",
+    // 关闭不必要的提示
+    "java.silentNotification": true,
+    // 使用 Maven 的编译输出，避免“找不到主类”
+    "java.project.outputPath": "target/classes",
+    "java.debug.settings.forceBuildBeforeLaunch": true
+  }
